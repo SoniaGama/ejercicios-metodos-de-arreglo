@@ -1,4 +1,10 @@
 // Ejercicios: Métodos de arreglo
+// function miForEach(arreglo, callback) {
+//     // cpompleta aqui
+// }
+
+// miForEach([1, 2, 3], function () {})
+
 
 // Array para probar las funciones
 var testArray = [6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
@@ -23,11 +29,14 @@ function myForEach(array) {
     }
 }
 
+// function myForEach(testArray, function)
+
 //función de map
 function myMap(array) {
     var arrayMap = [];
     for (var i = 0; i < array.length; i++) {
-        arrayMap.push(array[i]);
+        var push = array[i]*2;
+        arrayMap.push(push);
     }
     console.log(arrayMap);
     return arrayMap;
