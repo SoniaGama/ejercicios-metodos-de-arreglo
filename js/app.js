@@ -1,10 +1,4 @@
-// Ejercicios: Métodos de arreglo
-// function miForEach(arreglo, callback) {
-//     // cpompleta aqui
-// }
-
-// miForEach([1, 2, 3], function () {})
-
+console.log('Mis funciones:');
 
 // Array para probar las funciones
 var testArray = [6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
@@ -35,7 +29,7 @@ function myForEach(array) {
 function myMap(array) {
     var arrayMap = [];
     for (var i = 0; i < array.length; i++) {
-        var push = array[i]*2;
+        var push = array[i] * 2;
         arrayMap.push(push);
     }
     console.log(arrayMap);
@@ -56,17 +50,15 @@ function myFilter(array) {
 
 //función de reduce
 function myReduce(array) {
-    var arrayReduce = [];
     var numbers = 0;
     for (var i = 0; i < array.length; i++) {
         numbers += array[i];
     }
-    arrayReduce.push(numbers)
-    console.log(arrayReduce);
-    return arrayReduce;
+    console.log(numbers);
+    return numbers;
 }
 
-//función de reduce (revisar)
+//función de sort (revisar)
 // function mySort(array) {
 //     var arraySort = [];
 //     for (var i = 0; i < array.length; i++) {
